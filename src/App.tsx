@@ -22,8 +22,7 @@ export default function App() {
           <div style={{
             display: 'flex',
             'align-items': 'center',
-            'justify-content': 'center',
-            margin: '0',
+            "margin-left": '10px',
           }}>
             <img src="/logo.svg" alt="logo Hexacode" width={60} height={60} style={{
               margin: '2px',
@@ -36,15 +35,9 @@ export default function App() {
               margin: '5px',
             }}>
               <h1 style={{
-                'font-family': 'Poppins',
-                color: 'white',
                 margin: '0',
               }}>Hexacode</h1>
-              <h6 style={{
-                'font-family': 'Poppins',
-                color: 'white',
-                margin: '0',
-              }}>Developpe the future</h6>
+              <h6>Developpe the future</h6>
             </div>
           </div>
           <Title>SlotFlow</Title>
