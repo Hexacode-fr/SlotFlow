@@ -1,0 +1,1 @@
+import{_ as e,g as t,l as n,p as r}from"./virtual_solid-ssr-entry-client-DhvULdAU.js";var i=t(`<main><div class=centerContent style=font-size:45px;margin:0><h1>404</h1><h1>Page Introuvable`);function a(){var t=i(),a=t.firstChild;return r(t,e(n,{children:`404 | SlotFlow`}),a),t}export{a as default};

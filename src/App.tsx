@@ -19,27 +19,7 @@ export default function App() {
     <Router>
       {(props) => (
         <>
-          <div style={{
-            display: 'flex',
-            'align-items': 'center',
-            "margin-left": '10px',
-          }}>
-            <img src="/logo.svg" alt="logo Hexacode" width={60} height={60} style={{
-              margin: '2px',
-              'border-style': 'solid',
-              'border-color': 'white',
-              'border-radius': '10px',
-            }} />
-            <div style={{
-              'text-align': 'center',
-              margin: '5px',
-            }}>
-              <h1 style={{
-                margin: '0',
-              }}>Hexacode</h1>
-              <h6>Developpe the future</h6>
-            </div>
-          </div>
+          
           <Title>SlotFlow</Title>
           <Loading fallback={
             <main>
@@ -47,7 +27,30 @@ export default function App() {
                 <Spinner />
               </div>
             </main>
-          }>{props.children}</Loading>
+          }>
+            <div style={{
+              display: 'flex',
+              'align-items': 'center',
+              "margin-left": '10px',
+            }}>
+              <img src="/logo.svg" alt="logo Hexacode" width={60} height={60} style={{
+                margin: '2px',
+                'border-style': 'solid',
+                'border-color': 'white',
+                'border-radius': '10px',
+              }} />
+              <div style={{
+                'text-align': 'center',
+                margin: '5px',
+              }}>
+                <h1 style={{
+                  margin: '0',
+                }}>Hexacode</h1>
+                <h6>Developpe the future</h6>
+              </div>
+            </div>
+            {props.children}
+          </Loading>
         </>
       )}
     </Router>

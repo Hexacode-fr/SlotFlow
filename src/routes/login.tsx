@@ -45,13 +45,19 @@ export default function Login() {
                 <input type="email" class="form" placeholder="Email" ref={emailRef} />
                 <input type="password" class="form" placeholder="Mot de passe" ref={passwordRef} />
                 {error() && <p class="error">{error()}</p>}
+                <p>
+                    Pas de compte ? 
+                    <a href="/signup" style={{
+                        "text-decoration": "underline"
+                    }}>
+                        Inscrivez-Vous
+                    </a>
+                </p>
                 <button class="form">
                     Se connecter
                 </button>
                 {loading() && <Spinner />}
-
                 <p>Ou avec :</p>
-
                 <button
                     class="form"
                     style={{

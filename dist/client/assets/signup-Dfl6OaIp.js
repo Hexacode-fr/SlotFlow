@@ -1,0 +1,1 @@
+import{g as e}from"./virtual_solid-ssr-entry-client-DhvULdAU.js";var t=e(`<main><div class=centerContent>`);function n(){return t()}export{n as default};
