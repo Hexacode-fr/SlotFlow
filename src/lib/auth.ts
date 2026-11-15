@@ -9,8 +9,9 @@ export async function refreshUser() {
   try {
     const response = await account.get();
     setUser(response);
-  } catch {
-    setUser(null);
+  } catch (e) {
+    console.error("account.get failed:", e);
+    setUser(null);;
   } finally {
     setAuthLoading(false);
   }

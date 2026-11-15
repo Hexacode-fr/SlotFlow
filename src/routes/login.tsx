@@ -58,6 +58,7 @@ export default function Login() {
                         width: "50px",
                     }}
                     onClick={AuthWithGoogle}
+                    type="button"
                 >
                     <img src="/google.svg" alt="G" />
                 </button>
